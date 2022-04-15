@@ -1,10 +1,8 @@
 
-function measureRunningTime(func,...args){
+export default function measureRunningTime(func,...args){
     const varToString = varObj => Object.keys(varObj)[0]
     const displayName = func.name || varToString({ func })
     console.time(displayName)
     func(...args)
     console.timeEnd(displayName)
 }
-
-module.exports = measureRunningTime
