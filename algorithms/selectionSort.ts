@@ -10,7 +10,7 @@ const findSmallest = (array: number[]):number => {
     return smallestIndex
 }
 
-const selectionSort = (numbers: number[]):number[] => {
+const selectionSort = (numbers: number[]): number[] => {
     const numbersCopy = numbers.slice();
     const sortedNumbers: number[] = [];
     for (let i = 0 ; i < numbers.length; i++){
